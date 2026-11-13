@@ -1,0 +1,14 @@
+# Runtime dependencies (Streamlit Community Cloud, Docker, local)
+streamlit>=1.67,<2
+impedance>=1.7.1,<2
+plotly>=5.24
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+
+# DRT (distribution of relaxation times) - bayes_drt2 is not on PyPI; pinned
+# to a reviewed commit, installed from the GitHub archive (no git needed).
+cvxopt>=1.3
+cmdstanpy>=1.2
+matplotlib>=3.5
+bayes-drt2 @ https://github.com/jdhuang-csm/bayes-drt2/archive/99d5b603d98469a6382ddde5210a1bfdc0d76b3d.zip

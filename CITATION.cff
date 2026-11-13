@@ -1,0 +1,98 @@
+cff-version: 1.2.0
+message: >-
+  If you use EIS Studio, please also cite the software it is built on
+  (impedance.py, bayes_drt2) and the methods you used - see "references".
+title: EIS Studio
+version: 1.0.0
+license: MIT
+type: software
+authors:
+  - name: EIS Studio contributors
+references:
+  - type: software
+    title: impedance.py
+    authors:
+      - family-names: Murbach
+        given-names: Matthew D.
+      - family-names: Gerwe
+        given-names: Brian
+      - family-names: Dawson-Elli
+        given-names: Neal
+      - family-names: Tsui
+        given-names: Lok-kun
+    repository-code: https://github.com/ECSHackWeek/impedance.py
+    version: 1.7.1
+    license: MIT
+  - type: article
+    title: "impedance.py: A Python package for electrochemical impedance analysis"
+    authors:
+      - family-names: Murbach
+        given-names: Matthew D.
+      - family-names: Gerwe
+        given-names: Brian
+      - family-names: Dawson-Elli
+        given-names: Neal
+      - family-names: Tsui
+        given-names: Lok-kun
+    journal: Journal of Open Source Software
+    volume: 5
+    issue: 52
+    start: 2349
+    year: 2020
+    doi: 10.21105/joss.02349
+  - type: software
+    title: bayes_drt2
+    authors:
+      - family-names: Huang
+        given-names: Jake
+    repository-code: https://github.com/jdhuang-csm/bayes-drt2
+    commit: 99d5b603d98469a6382ddde5210a1bfdc0d76b3d
+    version: "0.2"
+    license: BSD-3-Clause
+  - type: article
+    title: >-
+      Towards robust autonomous impedance spectroscopy analysis: a calibrated
+      hierarchical Bayesian approach for electrochemical impedance spectroscopy
+      (EIS) inversion
+    authors:
+      - family-names: Huang
+        given-names: Jake
+      - family-names: Papac
+        given-names: Meagan
+      - family-names: O'Hayre
+        given-names: Ryan
+    journal: Electrochimica Acta
+    volume: 367
+    start: 137493
+    year: 2021
+    doi: 10.1016/j.electacta.2020.137493
+  - type: article
+    title: A method for improving the robustness of linear Kramers-Kronig validity tests
+    authors:
+      - family-names: Schönleber
+        given-names: Michael
+      - family-names: Klotz
+        given-names: Dino
+      - family-names: Ivers-Tiffée
+        given-names: Ellen
+    journal: Electrochimica Acta
+    volume: 131
+    start: 20
+    end: 27
+    year: 2014
+    doi: 10.1016/j.electacta.2014.01.034
+  - type: article
+    title: >-
+      Analysis of electrochemical impedance spectroscopy data using the
+      distribution of relaxation times: A Bayesian and hierarchical Bayesian approach
+    authors:
+      - family-names: Ciucci
+        given-names: Francesco
+      - family-names: Chen
+        given-names: Chi
+    journal: Electrochimica Acta
+    volume: 167
+    start: 439
+    end: 454
+    year: 2015
+    doi: 10.1016/j.electacta.2015.03.123

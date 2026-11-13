@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eis-studio"
+version = "1.0.0"
+description = "Streamlit app for electrochemical impedance spectroscopy: loading, Lin-KK validation, equivalent-circuit fitting, batch processing."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "streamlit>=1.67,<2",
+    "impedance>=1.7.1,<2",
+    "plotly>=5.24",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.1",
+    "cvxopt>=1.3",
+    "cmdstanpy>=1.2",
+    "matplotlib>=3.5",
+    "bayes-drt2 @ https://github.com/jdhuang-csm/bayes-drt2/archive/99d5b603d98469a6382ddde5210a1bfdc0d76b3d.zip",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["eis_studio"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
